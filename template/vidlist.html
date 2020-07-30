@@ -1,0 +1,55 @@
+<div id="wrapper_sec">
+    <div id="content_sec">
+        <div class="col1">
+            <div class="clear"></div>
+            <!-- Recent Videos -->
+            <div class="recent_videos">
+                <!-- Video Listing -->
+                <ul class="display">
+                    <li ng-repeat="x in videos">
+                    	<a href="#" class="thumb"><span class="add">&nbsp;</span><span class="rated">&nbsp;</span><img src="/covers/{{ x.aid }}-{{ x.id }}.png" alt="" width="155px" height="113px"/></a>
+                        <div class="bigsec">
+                        	<h4><a href="#play/{{ x.aid }}-{{ x.id }}" class="colr">{{ x.title }}</a></h4>
+                            <div class="clear"></div>
+                            <p class="txt">
+                            	{{ x.intro.slice(0,64) }}
+                            </p>
+                            <div class="clear"></div>
+                            <div class="postedby">
+                            	<p class="postbytxt">By: <a href="https://space.bilibili.com/{{x.upperid}}">{{ x.upper }}</a></p>
+                                <p class="views"><span class="left">Views: </span><a href="#">800</a></p>
+                            </div>
+                            <div class="right">
+                            	<p class="time">{{ x.length / 60}}:{{x.length % 60}}</p>
+                            	<p class="date"><span>{{ x.pubtime }}</span></p>
+                                <div class="rating">
+                                    <a href="#" class="colrd">&nbsp;</a>
+                                    <a href="#" class="colrd">&nbsp;</a>
+                                    <a href="#" class="colrd">&nbsp;</a>
+                                    <a href="#" class="colrd">&nbsp;</a>
+                                    <a href="#" class="greyscal">&nbsp;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallsec">
+                        	<h6><a href="detail.html" class="colr">Lorem ipsum dolor sit amet</a></h6>
+                            <div class="clear"></div>
+                            <p class="time">1:50</p>
+                            <p class="date">3 days ago</p>
+                            <div class="clear"></div>
+                            <div class="rating">
+                            	<a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="colrd">&nbsp;</a>
+                                <a href="#" class="greyscal">&nbsp;</a>
+                                <p class="views">800 Views</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
